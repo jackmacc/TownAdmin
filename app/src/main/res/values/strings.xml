@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">硕果小镇</string>
+
+
+    <string name="Fileld_errorMessage">不能为空</string>
+    <string name="groupsettings"> 群组设置</string>
+    <string name="securitysettings"> 安全设置</string>
+    <string name="activationswitch"> 会话激活</string>
+    <string name="goodlisttitle">特产</string>
+    <string name="hometitle">主页</string>
+    <string name="groupstitle">群组</string>
+    <string name="optiontitile">设置</string>
+    <string name="strtel">电话</string>
+    <string name="mantitle">个人签名</string>
+    <string name="kittitle">昵称</string>
+    <string name="clientitle">会员名</string>
+    <string name="msgtitle"> 消息提醒</string>
+    <string name="searchtitle"> 查不可见</string>
+    <string name="addfriendtitle">被加好友</string>
+    <string name="mailtitle">电子邮件</string>
+    <string name="addrtitle">通讯地址</string>
+    <string name="btncanceltitle">取消</string>
+    <string name="sumittitle">提交</string>
+    <string name="btnsavetitle">保存</string>
+</resources>

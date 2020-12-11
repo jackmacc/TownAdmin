@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".option_page"  >
+
+    <Button
+        android:id="@+id/bn_product_info_edit"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+
+        android:layout_marginTop="16dp"
+        android:text="个人信息"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bn_logout_man" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="10dp"
+        android:text="主机地址设置"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_marginEnd="16dp"
+        android:backgroundTintMode="src_atop"
+        app:cardBackgroundColor="@color/whitereal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/toptitile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/start_left"
+            android:drawableRight="@drawable/start_right"
+            android:gravity="center_horizontal|center_vertical"
+
+            android:text="管理设置"
+            android:textSize="30dp"
+            android:textStyle="bold"
+
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="81dp" />
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <EditText
+            android:id="@+id/ip1"
+            android:layout_width="55dp"
+            android:layout_height="48dp"
+            android:text="192"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="."
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/ip2"
+            android:layout_width="55dp"
+            android:layout_height="48dp"
+            android:text="168"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="."
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/ip3"
+            android:layout_width="55dp"
+            android:layout_height="48dp"
+            android:text="10"
+            android:textSize="20sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:text="."
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/ip4"
+            android:layout_width="55dp"
+            android:layout_height="48dp"
+            android:text="196"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_setIp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="28dp"
+            android:text="设置"
+            android:textSize="20dp"
+
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/bn_login_man"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+
+        android:layout_marginTop="32dp"
+        android:text="登  录"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7" />
+
+    <Button
+        android:id="@+id/bn_logout_man"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+
+        android:layout_marginTop="16dp"
+        android:text="登  出"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bn_login_man" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/end_left"
+        android:drawableRight="@drawable/end_right"
+        android:gravity="center_horizontal|center_vertical"
+
+        android:text=""
+        android:textSize="30dp"
+        android:textStyle="bold"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="55dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

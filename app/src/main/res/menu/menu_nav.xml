@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+  >
+    <item
+        android:id="@+id/EnjoyCraftRoot"
+        android:icon="@drawable/ic_home"
+
+        android:title="" />
+    <item android:title=""
+        android:id="@+id/EnjoyCraftManProfile"
+        android:icon="@drawable/ic_man_profile"/>
+    <item android:title=""
+        android:id="@+id/EnjoyCraftEnv"
+        android:icon="@drawable/ic_settings_black_24dp"/>
+    <item android:title=""
+        android:titleCondensed=""
+        android:id="@+id/EnjoyCraftGroupMess"
+        android:icon="@drawable/ic_assignment"/>
+</menu>

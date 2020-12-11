@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_product">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_img_choose"
+        android:layout_width="303dp"
+        android:layout_height="211dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_product_list" />
+
+    <TextView
+        android:id="@+id/tv_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="拣取图像"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/tv_product_list"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_upload_webdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:text="提交"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCancel"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:text="取消"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_upload_webdata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_upload_webdata"
+        app:layout_constraintTop_toTopOf="@+id/btn_upload_webdata"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/civ_et_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textSize="14dp"
+        android:ems="10"
+        android:hint="称呼"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/civ_img_choose"
+        app:layout_constraintStart_toStartOf="@+id/civ_img_choose"
+        app:layout_constraintTop_toBottomOf="@+id/civ_img_choose" />
+
+    <EditText
+        android:id="@+id/civ_et_mobile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="电话"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/civ_et_name"
+        app:layout_constraintStart_toStartOf="@+id/civ_et_name"
+        app:layout_constraintTop_toBottomOf="@+id/civ_et_name" />
+
+    <EditText
+        android:id="@+id/civ_et_dec"
+        android:layout_width="253dp"
+        android:layout_height="142dp"
+        android:layout_marginTop="16dp"
+        android:textSize="14dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="描述"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="@+id/civ_et_mobile"
+        app:layout_constraintStart_toStartOf="@+id/civ_et_mobile"
+        app:layout_constraintTop_toBottomOf="@+id/civ_et_mobile" />
+
+    <TextView
+        android:id="@+id/tv_product_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tv_choose"
+        app:layout_constraintEnd_toStartOf="@+id/tv_manager_page"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_choose"
+        app:layout_constraintTop_toTopOf="@+id/tv_choose" />
+
+    <TextView
+        android:id="@+id/tv_manager_page"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@+id/tv_product_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tv_product_list"
+        app:layout_constraintTop_toTopOf="@+id/tv_product_list" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

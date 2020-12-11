@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    tools:ignore="MissingDefaultResource">
+    <item
+        android:id="@+id/menu_productlist"
+        android:icon="@drawable/account_man"
+        android:title="列表" />
+
+
+
+    <item android:title="@string/hometitle"
+        android:id="@+id/home_page"
+        android:icon="@drawable/home_page"/>
+    <item android:title="@string/groupstitle"
+        android:id="@+id/option_page"
+        android:icon="@drawable/ic_baseline_groups_24"/>
+
+</menu>

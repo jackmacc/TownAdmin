@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_productlist"
+        android:icon="@drawable/account_man"
+        android:title="列表" />
+    <item android:title="服务"
+        android:id="@+id/menu_newslist"
+        android:icon="@drawable/server_new"/>
+    <item android:title="设置"
+        android:id="@+id/option_page"
+        android:icon="@drawable/option_page"/>
+
+</menu>
